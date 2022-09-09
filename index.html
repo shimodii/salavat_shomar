@@ -6,12 +6,104 @@
 	<title>صلوات شمار</title>
 </head>
 <body>
-	<div class="numberWrapper">
-		<p class="numberText" id="numberText">0</p>
-	</div>
-	<div class="buttonsWrapper">
-		<button class="resetButton" onclick="reset()"></button>
-		<button class="incButton" onclick="inc()"></button>
+	<div class="container">
+		<div class="box">
+			<div class="numberWrapper">
+				<p class="numberText" id="numberText">0</p>
+			</div>
+			<div class="buttonsWrapper">
+				<div class="resetWrapper">
+					<button class="resetButton" onclick="reset()">R</button>
+				</div>
+				<button class="incButton" onclick="inc()"></button>
+			</div>
+		</div>
 	</div>
 </body>
+<style type="text/css">
+body {
+	background: #efefef;
+}
+.container {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	
+}
+.numberText {
+	margin-left: 15px;
+}
+.resetWrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.box {
+	background-color: #ddele7;
+	border-radius: 20px;
+	padding: 40px;
+	margin-top: 100px;
+
+	background: #efefef;
+  	transition: .2s ease-in-out;
+  	box-shadow: -6px -6px 14px rgba(255, 255, 255, .7),
+              6px 6px 10px rgba(0, 0, 0, .15),
+              -6px -6px 10px rgba(255, 255, 255, .5),
+              6px 6px 8px rgba(255, 255, 255, .075);
+}
+.numberWrapper {
+	padding: 10px;
+	border-radius: 30px;
+	background: #efefef;
+  	transition: .2s ease-in-out;
+  	box-shadow: 6px 6px 8px rgba(255, 255, 255, .075),
+               6px 6px 10px rgba(0, 0, 0, .15),
+              -6px -6px 14px rgba(255, 255, 255, .7),
+              -6px -6px 10px rgba(255, 255, 255, .5);
+}
+.resetButton {
+	border-radius: 100%;
+	border: 0px;
+	width: 30px;
+	height: 30px;
+
+	background: #efefef;
+  	transition: .2s ease-in-out;
+  	box-shadow: -6px -6px 14px rgba(255, 255, 255, .7),
+              -6px -6px 10px rgba(255, 255, 255, .5),
+              6px 6px 8px rgba(255, 255, 255, .075),
+              6px 6px 10px rgba(0, 0, 0, .15);
+}
+.incButton {
+	margin: 20px;
+	border-radius: 100%;
+	border: 0px;
+	width: 80px;
+	height: 80px;
+
+	background: #efefef;
+  	transition: .2s ease-in-out;
+  	box-shadow: -6px -6px 14px rgba(255, 255, 255, .7),
+              -6px -6px 10px rgba(255, 255, 255, .5),
+              6px 6px 8px rgba(255, 255, 255, .075),
+              6px 6px 10px rgba(0, 0, 0, .15);
+}
+button:hover {
+	font-size: 11px;
+  	box-shadow: -2px -2px 6px rgba(255, 255, 255, .6),
+              -2px -2px 4px rgba(255, 255, 255, .4),
+              2px 2px 2px rgba(255, 255, 255, .05),
+              2px 2px 4px rgba(0, 0, 0, .1);
+}
+button:active {
+	font-size: 12px;
+  	box-shadow: inset -2px -2px 6px rgba(255, 255, 255, .7),
+              inset -2px -2px 4px rgba(255, 255, 255, .5),
+              inset 2px 2px 2px rgba(255, 255, 255, .075),
+              inset 2px 2px 4px rgba(0, 0, 0, .15);
+}
+.buttonsWrapper {
+	padding: 30px;
+}
+</style>
 </html>
